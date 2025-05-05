@@ -74,3 +74,6 @@ def tokenize(code):
                 break
     return tokens
 
+with open('lexer_test.lol', 'r') as f:
+    code = f.read()
+print(tokenize(code))
